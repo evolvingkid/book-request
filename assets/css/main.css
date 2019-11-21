@@ -1,0 +1,136 @@
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+}
+.Main_Nav{
+  float: left;
+  width: 100%;
+  background-color: #F0EDED;
+}
+.Nav_Left_txt{
+  margin: 10px;
+  float: left;
+}
+.Nav_Img{
+  float: right;
+  margin-top: 3px;
+  margin-right: 15px;
+  width: 30px;
+}
+.Heading_txt_feild{
+  margin-top: 50px;
+  text-align: center;
+  color: #767676;
+}
+.Featured_Products{
+    color: #767676;
+}
+.centered_txt{
+  text-align: center;
+}
+.sign_in_head{
+  font-size: 40px;
+}
+.login_page{
+  max-width: 500px;
+  margin: 0 auto;
+  color: #767676;
+  margin-top: 150px;
+}
+.input_Style_1{
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #CFCFCF;
+border-radius: 4px;
+}
+.form{
+  margin: 10px;
+}
+.signin_btn {
+  background-color: #F0EDED;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  margin-left: -50px;
+  top: 4px;
+}
+.Login_msg{
+  background-color: #FA8484;
+  text-align: center;
+  color: white;
+  padding: 30px 10px;
+  width: 340px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.water_mark{
+  position: fixed;
+  bottom: 0px;
+padding: 10px 20px;
+background-color: #181818;
+color: white;
+border-radius: 0px 20px 20px 0px;
+}
+.bar{
+  width: 35px;
+height: 3px;
+background-color: #767676;
+margin: 6px 0;
+border-radius: 10px;
+}
+.Hanburger_icon{
+  float:left;
+  margin-left:10px;
+  cursor: pointer;
+}
+.Card_dropdown{
+  position: absolute;
+  width: calc(80% - 50px);
+  margin-left: 10%;
+  top: -2000px;
+  min-height: calc(90% - 100px);
+  background-color: white;
+  z-index: 5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: 1s;
+}
+.Card_dropdown_small{
+  position: absolute;
+  width: calc(50% - 50px);
+  margin-left: 30%;
+  min-width: 550px;
+  top: -2000px;
+  background-color: white;
+  z-index: 5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: 1s;
+}
+
+.btn_style_2{
+  background-color: #5EADCC;
+  border: none;
+  color: white;
+  padding: 6px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.left{
+  float: left;
+}
+.inputfile{
+  opacity: 0;
+  position: absolute;
+}
