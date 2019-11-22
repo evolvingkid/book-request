@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="31" viewBox="0 0 29 31">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="29" height="31" transform="translate(29 314)" fill="#c71919" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-29 -314)" clip-path="url(#clip-path)">
+    <g id="ads" transform="translate(29 315)">
+      <g id="Group_4" data-name="Group 4">
+        <g id="Group_3" data-name="Group 3">
+          <path id="Path_4" data-name="Path 4" d="M28.575,4.446H26.281V2.039a.425.425,0,0,0-.425-.425H.425A.425.425,0,0,0,0,2.039V20.315a.425.425,0,0,0,.85,0V5.3H25.432V9.435a.425.425,0,0,0,.85,0V8.128H28.15V26.536h-2.8a.425.425,0,0,0,0,.85h3.229A.425.425,0,0,0,29,26.961V4.871A.425.425,0,0,0,28.575,4.446Zm-22.231,0H.85V2.464H6.344Zm19.088,0H7.193V2.464H25.432ZM28.15,7.278H26.281V5.3H28.15Z" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_6" data-name="Group 6">
+        <g id="Group_5" data-name="Group 5">
+          <path id="Path_5" data-name="Path 5" d="M25.856,10.847a.425.425,0,0,0-.425.425V23.7H.85V22.146a.425.425,0,0,0-.85,0v1.982a.425.425,0,0,0,.425.425H2.719v2.407a.425.425,0,0,0,.425.425H23.565a.425.425,0,0,0,0-.85h-20V24.554H25.856a.425.425,0,0,0,.425-.425V11.271A.425.425,0,0,0,25.856,10.847Z" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_8" data-name="Group 8">
+        <g id="Group_7" data-name="Group 7">
+          <path id="Path_6" data-name="Path 6" d="M17.389,18.418H8.326a1.559,1.559,0,0,0-1.558,1.558v1.133a1.559,1.559,0,0,0,1.558,1.558h9.063a1.559,1.559,0,0,0,1.558-1.558V19.975A1.559,1.559,0,0,0,17.389,18.418Zm.708,2.69a.709.709,0,0,1-.708.708H8.326a.709.709,0,0,1-.708-.708V19.975a.709.709,0,0,1,.708-.708h9.063a.709.709,0,0,1,.708.708Z" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_10" data-name="Group 10">
+        <g id="Group_9" data-name="Group 9">
+          <circle id="Ellipse_1" data-name="Ellipse 1" cx="0.425" cy="0.425" r="0.425" transform="translate(1.643 3.03)" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_12" data-name="Group 12">
+        <g id="Group_11" data-name="Group 11">
+          <circle id="Ellipse_2" data-name="Ellipse 2" cx="0.425" cy="0.425" r="0.425" transform="translate(4.814 3.03)" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_14" data-name="Group 14">
+        <g id="Group_13" data-name="Group 13">
+          <circle id="Ellipse_3" data-name="Ellipse 3" cx="0.425" cy="0.425" r="0.425" transform="translate(3.229 3.03)" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_16" data-name="Group 16">
+        <g id="Group_15" data-name="Group 15">
+          <path id="Path_7" data-name="Path 7" d="M10.161,15.777,7.49,8.3a.425.425,0,0,0-.4-.282h0a.425.425,0,0,0-.4.28c-.007.018-.675,1.866-1.335,3.7A37.233,37.233,0,0,0,4,15.916a.425.425,0,0,0,.421.428h0a.425.425,0,0,0,.416-.337c.046-.154.364-1.053.793-2.252H8.537l.824,2.307a.425.425,0,0,0,.8-.286Zm-4.228-2.87c.366-1.019.776-2.158,1.155-3.207l1.145,3.207Z" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_18" data-name="Group 18">
+        <g id="Group_17" data-name="Group 17">
+          <path id="Path_8" data-name="Path 8" d="M11.217,8.018h-.146a.425.425,0,0,0-.425.425V15.92a.425.425,0,0,0,.425.425h.146a4.163,4.163,0,0,0,0-8.326Zm.279,7.465V8.88a3.314,3.314,0,0,1,0,6.6Z" fill="#f00f2e"/>
+        </g>
+      </g>
+      <g id="Group_20" data-name="Group 20">
+        <g id="Group_19" data-name="Group 19">
+          <path id="Path_9" data-name="Path 9" d="M19.08,11.611h-.9a1.252,1.252,0,0,1-1.25-1.25v-.243a1.252,1.252,0,0,1,1.25-1.25h.534a1.252,1.252,0,0,1,1.25,1.25.425.425,0,0,0,.85,0,2.1,2.1,0,0,0-2.1-2.1h-.534a2.1,2.1,0,0,0-2.1,2.1v.243a2.1,2.1,0,0,0,2.1,2.1h.9a.889.889,0,0,1,.888.888v.9a1.252,1.252,0,0,1-1.25,1.25h-.534a1.252,1.252,0,0,1-1.25-1.25v-.267a.425.425,0,1,0-.85,0v.267a2.1,2.1,0,0,0,2.1,2.1h.534a2.1,2.1,0,0,0,2.1-2.1v-.9A1.74,1.74,0,0,0,19.08,11.611Z" fill="#f00f2e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

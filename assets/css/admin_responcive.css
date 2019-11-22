@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1148px){
+  .main_bar{
+      width: calc(75% - 60px);
+  }
+}
+@media only screen and (max-width: 948px){
+  .main_bar{
+      width: calc(95% - 60px);
+  }
+}

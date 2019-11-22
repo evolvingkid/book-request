@@ -1,0 +1,7 @@
+.main_bar{
+  float: right;
+    width: calc(80% - 60px);
+    background-color: white;
+    margin-right: 50px;
+    margin-top: 20px;
+}

@@ -1,12 +1,19 @@
-
+*{
+font-family: sans-serif;
+}
 html,body{
+  background: #F7F7F7;
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
+  height: 100%;
 }
 .Main_Nav{
+  padding: 10px;
   float: left;
   width: 100%;
-  background-color: #F0EDED;
+  background-color: white;
+  border-bottom: solid 1px #D6D6D6;
 }
 .Nav_Left_txt{
   margin: 10px;
@@ -133,4 +140,69 @@ border-radius: 10px;
 .inputfile{
   opacity: 0;
   position: absolute;
+}
+
+.Nav_head_right{
+    float: right;
+}
+.head{
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub_text{
+  font-size: 13px;
+}
+.Nav_head_right{
+  margin-right: 10px;
+}
+#side_navbar{
+  height: 100%;
+}
+.side_navbar{
+  float: left;
+  width: calc(20% - 60px);
+  background-color: white;
+  height: 100%;
+  padding: 10px;
+color: #9E9E9E;
+border-right: solid 1px #D6D6D6;
+transition: 0.5s;
+}
+.nav_txt{
+  padding-top: 5px;
+  color: #707070;
+}
+.side_nav_bar_option{
+  color: black;
+    cursor: pointer;
+}
+.txt_option_side_nav{
+  margin-left: 10px;
+  position: relative;
+  top:-5px;
+  cursor: pointer;
+}
+.none_display{
+  display: none;
+}
+.inner_options{
+  padding: 10px;
+}
+.display_on{
+  display: block;
+  animation-duration: 2s;
+  animation-name: inner_option_showing;
+}
+@keyframes inner_option_showing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu_icon_felid{
+  margin-top: -7px;
+  margin-right: 10px;
+  cursor: pointer;
 }

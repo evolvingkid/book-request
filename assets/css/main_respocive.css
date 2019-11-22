@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1148px){
+.side_navbar{
+  width: calc(25% - 60px);
+}
+}
+@media only screen and (max-width: 948px){
+.side_navbar{
+  max-width: 200px;
+  width: 200px;
+  position: absolute;
+  left: -2000px;
+  top: 55px;
+}
+.menu_icon {
+  width: 35px;
+  height: 5px;
+  background-color: #707070;
+  margin: 6px 0;
+  border-radius: 50px;
+}
+}
