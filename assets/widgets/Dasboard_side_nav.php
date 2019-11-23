@@ -43,9 +43,9 @@
     style="width:25px; margin-top:10px;">
     <label class="txt_option_side_nav" >Users</label>
     <div class="none_display" id="Users">
-    <div class=" inner_options">
+    <a href="CurrentlyUsers.php"> <div class=" inner_options">
       Currently Users
-    </div>
+    </div></a>
     <div class=" inner_options">
       Deleted Users
     </div>

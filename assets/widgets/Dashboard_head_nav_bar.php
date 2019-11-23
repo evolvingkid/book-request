@@ -8,7 +8,7 @@
     <i> Dashboard</i>
   </div>
   <div class="Nav_head_right sub_text nav_txt" style="padding-right: 10px;">
-mohammed anas
+<?php echo $_SESSION["user"]; ?>
   </div>
   <div class="Nav_head_right">
 <img src="http://<?php echo $server_domain_name; ?>/book_request/assets/Build_In_SVG/notifications.svg" alt=""

@@ -188,6 +188,7 @@ transition: 0.5s;
 .inner_options{
   padding: 10px;
 }
+
 .display_on{
   display: block;
   animation-duration: 2s;
@@ -205,4 +206,43 @@ transition: 0.5s;
   margin-top: -7px;
   margin-right: 10px;
   cursor: pointer;
+}
+.right{
+  float: right;
+}
+.float_covering{
+  float: left;
+  width: 100%;
+}
+.table{
+  width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.head_row{
+  background: #64E8CA;
+}
+tr,td{
+  padding: 10px;
+}
+.model{
+  position: absolute;
+  width: calc(80% - 50px);
+  margin-left: 10%;
+  top: -2000px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow:2px 2px 10px grey;
+  transition: 1s;
+}
+.form_css{
+  margin: 10px;
+  width: calc(50% - 50px);
+}
+.input_txt{
+  margin-top: 20px;
+  width: 100px;
 }

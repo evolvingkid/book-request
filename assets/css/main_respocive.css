@@ -3,6 +3,17 @@
   width: calc(25% - 60px);
 }
 }
+@media only screen and (max-width: 982px){
+.form_css{
+  width: 100%;
+}
+.table{
+  overflow-x: scroll;
+}
+table{
+  width: 908px;
+}
+}
 @media only screen and (max-width: 948px){
 .side_navbar{
   max-width: 200px;

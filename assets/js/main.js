@@ -13,6 +13,10 @@ slide_number=1;
   document.getElementById('slide_nav').style.left = "-2000px";
   slide_number=0;
 }
-
-
+}
+function close_card(ids) {
+document.getElementById(ids).style.top = "-2000px";
+}
+function open_card(ids) {
+document.getElementById(ids).style.top = "70px";
 }
