@@ -31,7 +31,7 @@
         </div>
         <div class="">
           <div class="float_covering">
-          <form class="" action="index.html" method="post">
+          <form action="include_Files/create.php" method="get">
             <div class="form_css left">
 <div class="left input_txt">users name:</div>
 <input type="text" name="Usersname" value="" class="input_Style_1" placeholder="Users name" required>
@@ -42,7 +42,6 @@
             </div>
               </div>
               <div class="float_covering">
-              <form class="" action="index.html" method="post">
                 <div class="form_css left">
                   <div class="left input_txt">Adress:</div>
     <input type="text" name="Adress" value="" class="input_Style_1" placeholder="Adress" required>
@@ -53,15 +52,14 @@
                 </div>
                   </div>
                   <div class="float_covering">
-                  <form class="" action="index.html" method="post">
                     <div class="form_css left">
                       <div class="left input_txt">job Section:</div>
-        <input type="text" name="job Section" value="" class="input_Style_1" placeholder="job Section" required>
+        <input type="text" name="jobSection" value="" class="input_Style_1" placeholder="job Section" required>
                     </div>
                       </div>
                       <div class="float_covering">
                       <div class="right">
-                      <button type="submit" name="button" class="btn_style_2" style="margin-top:15px;">Create</button>
+                      <button type="submit" name="button" class="btn_style_2" style="margin-top:15px;" value="create_Users">Create</button>
                       </div>
                         </div>
           </form>
@@ -78,23 +76,58 @@
   onclick="open_card('create_users')">Create</button>
   </div>
     </div>
+    <?php
+    require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php';
+     $sql = "SELECT * FROM admin_login WHERE acc_validity=1";
+    $result = $conn->query($sql); ?>
 <div class="table">
 <table>
   <tr class="head_row">
     <td>Si no</td>
     <td>Users Names</td>
-    <td>Created Dates</td>
+    <td>Job Section</td>
     <td>Status</td>
   </tr>
-  <tr>
-    <td>1</td>
-    <td>Mohammed Anas</td>
-    <td>22/11/2019</td>
-    <td>Online</td>
-  </tr>
+  <?php
+  $count=1;
+  if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {?>
+        <tr>
+          <td><?php echo $count; ?></td>
+          <td><?php echo   $row["admin_username"]; ?></td>
+          <td><?php echo   $row["job_section"]; ?></td>
+          <td><?php echo   $row["status"]; ?></td>
+        </tr>
+  <?php
+    $count++;
+    }
+  } else {
+      echo "<tr> <td>0 results </td> </tr>";
+  }
+   ?>
+
 </table>
 </div>
 </div>
     <script src="http://<?php echo $server_domain_name; ?>/book_request/assets/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    //This is the alert function were msg will pop up
+function alert_pop_up() {
+var txt;
+if (confirm("<?php echo $_GET['msg']; ?>")) {
+  txt = "You pressed OK!";
+  window.location.href = "/book_request/admin/CurrentlyUsers.php";
+} else {
+  txt = "You pressed Cancel!";
+}
+console.log(txt);
+}
+<?php
+if (isset($_GET['msg'])) {
+?>
+alert_pop_up();
+<?php
+}  ?>
+    </script>
   </body>
 </html>
