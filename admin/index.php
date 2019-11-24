@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <?php $server_domain_name= $_SERVER['HTTP_HOST'];?>
 <?php
+function Online_status($id)
+{
+    require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php';
+  $sql = "UPDATE admin_login SET status='online' WHERE admin_id='$id' ";
+
+  if ($conn->query($sql) === TRUE) {
+      echo "Record updated successfully";
+  } else {
+      echo "Error updating record: " . $conn->error;
+  }
+}
  session_start();
  $login_msg=NULL;
 if(isset($_POST['login'])){
+   //echo $password;
   require_once($_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php');
+     $password=md5($_POST['Password']);
   $sql = "SELECT * FROM `admin_login`
   WHERE admin_username='$_POST[Username]'
-  AND admin_pass='$_POST[Password]' ";
+  AND admin_pass='$password' ";
+  echo $sql;
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   $row = $result->fetch_assoc();
       $_SESSION["id"] = $row["admin_id"];
       $_SESSION["user"] = $_POST["Username"];
       $_SESSION["pass"] = $_POST["Password"];
+      Online_status($row["admin_id"]);
         header('location:dashboard.php');
+
 } else {
     $login_msg="You Enter Wrong Username or Password";
 }
@@ -40,7 +56,7 @@ if ($result->num_rows > 0) {
       </div>
       <div class="form">
         <label for="">Password:</label>
-        <input type="text" name="Password" value="" class="input_Style_1" placeholder="Password" required>
+        <input type="password" name="Password" value="" class="input_Style_1" placeholder="Password" required>
         <button type="submit" name="login" class="signin_btn">
           <img
           src="http://<?php echo $server_domain_name ?>/book_request/assets/Build_In_SVG/signin_btn_arrow.svg"

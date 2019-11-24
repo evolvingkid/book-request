@@ -20,3 +20,16 @@ document.getElementById(ids).style.top = "-2000px";
 function open_card(ids) {
 document.getElementById(ids).style.top = "70px";
 }
+var profile_number=0;
+function profile_view() {
+  //console.log("in");
+  if (profile_number==0) {
+      document.getElementById('profile_card').className = "Profile";
+      profile_number=1;
+  }else {
+    document.getElementById('profile_card').className = "none_display";
+    profile_number=0;
+
+  }
+
+}

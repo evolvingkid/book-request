@@ -1,9 +1,10 @@
 <div class="side_navbar" id="slide_nav">
+  <a href="dashboard.php">
   <div class="side_nav_bar_option" style="margin-top:30px;">
     <img src="http://<?php echo $server_domain_name; ?>/book_request/assets/Build_In_SVG/dashboards_icon.svg" alt=""
     style="width:25px; margin-top:10px;">
     <label class="txt_option_side_nav" >Dashboard</label>
-  </div>
+  </div></a>
   <div class="side_nav_bar_option" style="margin-top:10px;" onclick="show_inner_option('iteams')">
     <img src="http://<?php echo $server_domain_name; ?>/book_request/assets/Build_In_SVG/iteams_icons.svg" alt=""
     style="width:25px; margin-top:10px;">
