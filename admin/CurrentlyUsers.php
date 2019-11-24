@@ -96,7 +96,12 @@
           <td><?php echo $count; ?></td>
           <td><?php echo   $row["admin_username"]; ?></td>
           <td><?php echo   $row["job_section"]; ?></td>
-          <td><?php echo   $row["status"]; ?></td>
+          <td><?php if ( $row["status"] == "online") {
+          echo   '<p style="color:#199B30;">'.$row["status"].'<p>';
+        }else {
+  echo   '<p style="color:#E30D23;">'.$row["status"].'<p>';
+        }
+           ?></td>
         </tr>
   <?php
     $count++;
