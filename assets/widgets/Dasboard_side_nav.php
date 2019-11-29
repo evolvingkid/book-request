@@ -10,9 +10,9 @@
     style="width:25px; margin-top:10px;">
     <label class="txt_option_side_nav" >Iteams</label>
     <div class="none_display" id="iteams">
-    <div class=" inner_options">
+  <a href="Categories.php">  <div class=" inner_options">
       Categories
-    </div>
+    </div></a>
     <div class=" inner_options">
       Books
     </div>

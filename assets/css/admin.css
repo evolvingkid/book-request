@@ -9,3 +9,21 @@
 h3{
     color: #707070;
 }
+.round_corner_btn_in_table{
+  background-color: #5EADCC;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.bg_red{
+    background-color: #E00B0B;
+}
+.bg_blue{
+    background-color: #00B7FF;
+}
