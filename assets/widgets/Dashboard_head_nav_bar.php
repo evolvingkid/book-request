@@ -10,9 +10,9 @@
   <div class="Nav_head_right sub_text nav_txt" style="padding-right: 10px;" onclick="profile_view()">
 <?php echo $_SESSION["user"]; ?>
 <div class="none_display" id="profile_card">
-  <div class="Profile_txt" >
+  <a href="profile.php"><div class="Profile_txt" >
     Profile
-  </div>
+  </div></a>
   <a href="signout.php"> <div class="Profile_txt" >
     SignOut
   </div></a>
