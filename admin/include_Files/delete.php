@@ -38,6 +38,12 @@ if (isset($_GET['bookid'])) {
   $delete_sql_class = new Delete_query($sql);
   $delete_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }
-
+if (isset($_GET['bannerid'])) {
+  $sql = "DELETE FROM banner WHERE banner_id='$_GET[bannerid]'";
+  $sucess_msg="banner  is been deleted";
+  $redirect_link_head="banners.php";
+  $delete_sql_class = new Delete_query($sql);
+  $delete_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
 
  ?>

@@ -75,6 +75,24 @@ if (isset($_POST['book_name'])) {
   $push_sql_class = new PushSql($sql);
   $push_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }
+
+if (isset($_POST['banner'])) {
+  session_start();
+  //var_dump($_SESSION);
+  include 'upload.php';
+  upload();
+  $filename=basename( $_FILES["fileToUpload"]["name"]);
+//  echo "<br>";
+  //echo $filename;
+  $sql = "INSERT INTO banner (banner_img)
+  VALUES ('$filename')";
+  echo "<br>";
+  echo $sql;
+  $sucess_msg="New Banner is been created";
+  $redirect_link_head="banners.php";
+  $push_sql_class = new PushSql($sql);
+  $push_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
 }
 }
  ?>

@@ -37,3 +37,24 @@ h3{
   background-color: #D9FFF0;
   color: black;
 }
+.banner_imgsed{
+  width: 500px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+margin: 0 auto ;
+margin-bottom: 20px;
+text-align: center;
+transition: 0.5s;
+}
+.hidden_hover_button_banner{
+  opacity: 0;
+  transition: 0.5s;
+}
+.banner_imgsed:hover {
+  transform: scale(1.1);
+}
+.banner_imgsed:hover .hidden_hover_button_banner{
+  opacity: 1;
+    filter: blur(0px);
+}
