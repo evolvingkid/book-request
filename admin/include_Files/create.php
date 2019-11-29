@@ -41,6 +41,7 @@ if ($_GET['button']=="create_Users") {
 }
 if (isset($_POST['submit'])) {
 if ($_POST['submit']=="Upload Image") {
+  //category table insertion
 if (isset($_POST['category_name'])) {
   session_start();
   //var_dump($_SESSION);
@@ -53,6 +54,24 @@ if (isset($_POST['category_name'])) {
   VALUES ('$_POST[category_name]','$_SESSION[id]', '$filename')";
   $sucess_msg="New Category is been created";
   $redirect_link_head="Categories.php";
+  $push_sql_class = new PushSql($sql);
+  $push_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
+//book table insertion
+if (isset($_POST['book_name'])) {
+  session_start();
+  //var_dump($_SESSION);
+  include 'upload.php';
+  upload();
+  $filename=basename( $_FILES["fileToUpload"]["name"]);
+//  echo "<br>";
+  //echo $filename;
+  $sql = "INSERT INTO books (cat_id, book_name, user_id, book_img, stock, price)
+  VALUES ('$_POST[category]','$_POST[book_name]','$_SESSION[id]', '$filename','$_POST[stock]','$_POST[Price]')";
+  echo "<br>";
+  echo $sql;
+  $sucess_msg="New Category is been created";
+  $redirect_link_head="Books.php";
   $push_sql_class = new PushSql($sql);
   $push_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }

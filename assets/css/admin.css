@@ -27,3 +27,13 @@ h3{
 .bg_blue{
     background-color: #00B7FF;
 }
+.select_html{
+  width: calc(70% - 50px);
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #D9FFF0;
+  color: black;
+}

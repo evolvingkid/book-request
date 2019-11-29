@@ -13,9 +13,9 @@
   <a href="Categories.php">  <div class=" inner_options">
       Categories
     </div></a>
-    <div class=" inner_options">
+  <a href="Books.php">  <div class=" inner_options">
       Books
-    </div>
+    </div></a>
     </div>
   </div>
   <div class="side_nav_bar_option" style="margin-top:10px;">

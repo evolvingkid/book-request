@@ -33,7 +33,15 @@ if (isset($_POST['categoryid'])) {
   $edit_sql_class = new Edit_query($sql);
   $edit_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }
-
+if (isset($_POST['book_name'])) {
+    session_start();
+      $sql = "UPDATE books SET cat_id='$_POST[category]' , book_name='$_POST[book_name]' , stock='$_POST[stock]' , price='$_POST[Price]' , user_id='$_SESSION[id]'  WHERE book_id='$_POST[book_id]'";
+      echo $sql;
+  $sucess_msg="Book is been editted";
+  $redirect_link_head="Books.php";
+  $edit_sql_class = new Edit_query($sql);
+  $edit_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
 
 
  ?>

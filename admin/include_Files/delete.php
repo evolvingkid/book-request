@@ -31,7 +31,13 @@ if (isset($_GET['categoryid'])) {
   $delete_sql_class = new Delete_query($sql);
   $delete_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }
-
+if (isset($_GET['bookid'])) {
+  $sql = "DELETE FROM books WHERE book_id='$_GET[bookid]'";
+  $sucess_msg="book  is been deleted";
+  $redirect_link_head="Books.php";
+  $delete_sql_class = new Delete_query($sql);
+  $delete_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
 
 
  ?>
