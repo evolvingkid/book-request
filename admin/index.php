@@ -20,8 +20,9 @@ if(isset($_POST['login'])){
      $password=md5($_POST['Password']);
   $sql = "SELECT * FROM `admin_login`
   WHERE admin_username='$_POST[Username]'
-  AND admin_pass='$password' ";
-  echo $sql;
+  AND admin_pass='$password'
+  AND acc_validity='1'
+   ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   $row = $result->fetch_assoc();

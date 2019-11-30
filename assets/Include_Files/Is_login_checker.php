@@ -12,7 +12,9 @@ function Login_in_Checker()
   $sql = "SELECT * FROM `admin_login`
   WHERE admin_username='$Username'
   AND admin_pass='$password'
-  AND admin_id='$id' ";
+  AND admin_id='$id'
+  AND acc_validity='1';
+   ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   $row = $result->fetch_assoc();

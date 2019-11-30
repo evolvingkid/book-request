@@ -52,9 +52,10 @@
     </div>
     </div>
   </div>
+  <a href="settings.php">
   <div class="side_nav_bar_option" style="margin-top:10px;">
     <img src="http://<?php echo $server_domain_name; ?>/book_request/assets/Build_In_SVG/settings_icons.svg" alt=""
     style="width:25px; margin-top:10px;">
     <label class="txt_option_side_nav" >Settings</label>
-  </div>
+  </div></a>
 </div>
