@@ -47,9 +47,9 @@
     <a href="CurrentlyUsers.php"> <div class=" inner_options">
       Currently Users
     </div></a>
-    <div class=" inner_options">
+    <a href="deleted_users.php"><div class=" inner_options">
       Deleted Users
-    </div>
+    </div></a>
     </div>
   </div>
   <a href="settings.php">
