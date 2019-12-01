@@ -1,0 +1,108 @@
+.whole_box{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.Intro_head{
+  color: white;
+  position: relative;
+  top: 25%;
+  float: right;
+  right: 100px;
+}
+.Intro_head_txt{
+  color: white;
+  position: relative;
+  top: 30%;
+  float: right;
+  font-size: 40px;
+  right: 100px;
+}
+.intro_btn{
+  background-color: none;
+  border: 3px solid #60CCA6;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.Banner_Img{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+    opacity: 0;
+    transition: 1s;
+}
+.Banner_Button {
+  background-color: rgba(214, 214, 214, 0.24);
+  border: none;
+  padding: 32px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+  margin-top: 150px;
+}
+
+.center_Box{
+  margin: 0 auto;
+  Max-width: 1000px;
+  height: 430px;
+}
+
+.center_feature{
+  margin: 0 auto;
+  Max-width: 1000px;
+  height: 430px;
+}
+.Products_Box{
+  float: left;
+  width: calc(50% - 100px);
+  border: 1px solid #E6E6E6;
+  margin:30px;
+  padding: 10px;
+}
+.Product_box_img{
+  height: 50%;
+  width: 100%;
+}
+.Product_Price{
+  font-size: 20px;
+  float: right;
+  color: #199B30;
+}
+.footer_end{
+    background-color: #F0EDED;
+    float: left;
+    width: 100%;
+}
+.left-6{
+  float: left;
+  width: calc(30% - 50px);
+  margin: 20px;
+  color: #767676;
+  margin-left: 150px;
+}
+.footer_txt{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.banners{
+  height:550px;
+}
+.Heading_txt_feild_para{
+  font-size:15px;
+}
+.Heading_txt_feild{
+  padding: 5px;
+}
