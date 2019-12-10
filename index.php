@@ -25,18 +25,14 @@
     <i>About Us</i>
   </div>
 </nav>
-<div class="Intro_head">
-<div class="Intro_head_txt">
-  <i> Find Your Favirate<br>
-Books in Here</i>
+<div class="contain_body">
+<div class="Head_intro_Box"><i> Find You Faviorite<br> Books in Here</i></div>
+<div class="sub_intro_Box">
+  There is no Friend as loyal as a book <br>
+  -Ernest Hemingway
 </div>
-</div>
-<div class="Intro_head_sub_txt Intro_head" style="top: 45%; right: -70px;">
-  “There is no friend as loyal as a book.”<br>
-  ― Ernest Hemingway
-</div>
-<div class="Intro_head intro_btn" style="top: 55%; right: -240px;" onclick="change_page()">
-Explore
+<div class="btn_into_box" onclick="change_page()">
+  Explore
 </div>
 </div>
 <script type="text/javascript">

@@ -1,35 +1,3 @@
-.whole_box{
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.Intro_head{
-  color: white;
-  position: relative;
-  top: 25%;
-  float: right;
-  right: 100px;
-}
-.Intro_head_txt{
-  color: white;
-  position: relative;
-  top: 30%;
-  float: right;
-  font-size: 40px;
-  right: 100px;
-}
-.intro_btn{
-  background-color: none;
-  border: 3px solid #60CCA6;
-  color: white;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 50px;
-  cursor: pointer;
-}
 .Banner_Img{
   width: 100%;
   height: 500px;
@@ -38,6 +6,10 @@
   left: 0px;
     opacity: 0;
     transition: 1s;
+}
+.banner{
+    position: relative;
+      width: 100%;
 }
 .Banner_Button {
   background-color: rgba(214, 214, 214, 0.24);
@@ -58,32 +30,10 @@
   Max-width: 1000px;
   height: 430px;
 }
-
-.center_feature{
-  margin: 0 auto;
-  Max-width: 1000px;
-  height: 430px;
-}
-.Products_Box{
-  float: left;
-  width: calc(50% - 100px);
-  border: 1px solid #E6E6E6;
-  margin:30px;
-  padding: 10px;
-}
-.Product_box_img{
-  height: 50%;
-  width: 100%;
-}
-.Product_Price{
-  font-size: 20px;
-  float: right;
-  color: #199B30;
-}
-.footer_end{
-    background-color: #F0EDED;
-    float: left;
-    width: 100%;
+.whole_box{
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 .left-6{
   float: left;
@@ -105,4 +55,65 @@
 }
 .Heading_txt_feild{
   padding: 5px;
+}
+.full_cont{
+  float: left;
+  width: 100%;
+}
+.Category_Section_cont{
+  float: left;
+  width: calc(34% - 50px);
+  margin: 20px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.Category_Section{
+  margin: 20px;
+}
+.contain_body{
+  position: relative;
+  top: 150px;
+  left: 55%;
+  color: white;
+}
+.Head_intro_Box{
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.sub_intro_Box{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.btn_into_box{
+  border: solid 5px #5DE8C5;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+}
+.cat_banner{
+   text-align: center;
+   padding: 20px;
+   background-color: rgba(233, 230, 230, 0.7);
+   margin-top: 245px;
+}
+.book_img{
+  float: left;
+  margin: 30px;
+  width: calc(60% - 50px);
+}
+.book_details{
+  float: right;
+    width: calc(39% - 50px);
+    margin-top: 30px;
+    text-align: center;
+}
+.book_name{
+  color: #767676;
+  font-size: 22px;
+}
+.book_money{
+  color: #199B30;
+  font-size: 20px;
 }
