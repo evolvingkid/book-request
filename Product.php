@@ -11,20 +11,7 @@
     <link rel="stylesheet" href="http://<?php echo $server_domain_name; ?>/book_request/assets/css/client_responcive.css">
   </head>
   <body>
-    <nav class="Main_Nav" style="background:#78FFD0; border:none; color: Black;">
-      <div class="left head nav_txt" style="color: Black;">
-        <i> Book Request</i>
-      </div>
-      <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-        <i>Login in</i>
-      </div>
-      <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-        <i> Home </i>
-      </div>
-      <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-        <i>About Us</i>
-      </div>
-    </nav>
+<?php   require $_SERVER['DOCUMENT_ROOT'].'/book_request/assets/widgets/client_top_nav_bar.php'; ?>
     <div class="banners" style="">
   <button type="button" name="button" class="Banner_Button"
   style="float:left" onclick="Banner_Transaction(1)"> <b><</b> </button>

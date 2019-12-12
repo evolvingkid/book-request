@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<?php $server_domain_name= $_SERVER['HTTP_HOST'];?>
+<?php
+session_start();
+ $server_domain_name= $_SERVER['HTTP_HOST'];?>
 <html lang="en" dir="ltr">
   <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +18,19 @@
     <i> Book Request</i>
   </div>
   <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-    <i>Login in</i>
+    <?php if (isset($_SESSION["student_user"])) {
+      ?>
+    <a href="student_acc.php" style="color:white;">   <i><?php echo $_SESSION["student_user"]; ?></i> </a>
+      <?php
+    }else {?>
+    <a href="login.php" style="color:white;">  <i>Login in</i> </a>
+    <?php  } ?>
   </div>
   <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-    <i> Home </i>
+  <a href="index.php" style="color:white;">  <i> Home </i> </a>
   </div>
   <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-    <i>About Us</i>
+    <a href="AboutUs.php" style="color:white;">  <i>About Us</i> </a>
   </div>
 </nav>
 <div class="contain_body">
@@ -39,6 +47,25 @@
   function change_page() {
     window.location.href = "/book_request/bookrequest.php";
   }
+</script>
+<script type="text/javascript">
+//This is the alert function were msg will pop up
+function alert_pop_up() {
+var txt;
+if (confirm("book creation <?php echo $_GET['status']; ?>")) {
+txt = "You pressed OK!";
+window.location.href = "/book_request/index.php";
+} else {
+txt = "You pressed Cancel!";
+}
+console.log(txt);
+}
+<?php
+if (isset($_GET['type'])) {
+?>
+alert_pop_up();
+<?php
+}  ?>
 </script>
   </body>
 </html>

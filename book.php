@@ -11,23 +11,11 @@
     <link rel="stylesheet" href="http://<?php echo $server_domain_name; ?>/book_request/assets/css/client_responcive.css">
   </head>
   <body>
-    <nav class="Main_Nav" style="background:#78FFD0; border:none; color: Black;">
-      <div class="left head nav_txt" style="color: Black;">
-        <i> Book Request</i>
-      </div>
-      <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-        <i>Login in</i>
-      </div>
-      <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-        <i> Home </i>
-      </div>
-      <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-        <i>About Us</i>
-      </div>
-    </nav>
+<?php   require $_SERVER['DOCUMENT_ROOT'].'/book_request/assets/widgets/client_top_nav_bar.php'; ?>
     <?php
       require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php';
-     $sql = "SELECT * FROM books WHERE book_id='$_GET[Book_Id]'";
+     $sql = "SELECT * FROM books LEFT JOIN admin_login ON books.user_id = admin_login.admin_id
+     WHERE book_id='$_GET[Book_Id]'";
      $result = $conn->query($sql);
      if ($result->num_rows > 0) {
          while($row = $result->fetch_assoc()) { ?>
@@ -36,6 +24,9 @@
       <div class="book_details">
 <p class="book_name"> <?php echo $row['book_name']; ?> </p>
 <p class="book_money"> <b> ₹ <?php echo $row['price']; ?> </b></p>
+<a href="conformation.php?type=add_to_kart&book_id=<?php echo $row['book_id']; ?>"><button type="button" name="button" class="btn_light">Add to Cart</button></a> <br>
+<a href="conformation.php?type=add_to_request&book_id=<?php echo $row['book_id']; ?>"><button type="button" name="button" class="btn_bright">Request</button></a>
+<p>Administrator:<?php echo $row['admin_username']; ?> </p>
       </div>
     </div>
   <?php }
