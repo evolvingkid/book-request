@@ -42,6 +42,13 @@ if (isset($_POST['book_name'])) {
   $edit_sql_class = new Edit_query($sql);
   $edit_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }
-
+if (isset($_GET['req_id'])) {
+  $sql = "UPDATE request_books SET req_status	='Approve' WHERE req_id='$_GET[req_id]'";
+  echo $sql;
+$sucess_msg="Approval is completed";
+$redirect_link_head="new_request.php";
+$edit_sql_class = new Edit_query($sql);
+$edit_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
 
  ?>

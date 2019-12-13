@@ -28,13 +28,13 @@
     style="width:25px; margin-top:10px;">
     <label class="txt_option_side_nav" >Requests</label>
     <div class="none_display" id="request">
-    <div class=" inner_options">
+  <a href="new_request.php">  <div class=" inner_options">
       New Requests
-    </div>
-    <div class=" inner_options">
+    </div> </a>
+  <a href="conformed_request.php">  <div class=" inner_options">
       Conformed Request
-    </div>
-    <div class=" inner_options">
+    </div> </a>
+  <a href="deleted_request.php">  <div class=" inner_options">
       Deleted Request
     </div>
     </div>
