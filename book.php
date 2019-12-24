@@ -25,7 +25,7 @@
 <p class="book_name"> <?php echo $row['book_name']; ?> </p>
 <p class="book_money"> <b> ₹ <?php echo $row['price']; ?> </b></p>
 <a href="conformation.php?type=add_to_kart&book_id=<?php echo $row['book_id']; ?>"><button type="button" name="button" class="btn_light">Add to Cart</button></a> <br>
-<a href="conformation.php?type=add_to_request&book_id=<?php echo $row['book_id']; ?>"><button type="button" name="button" class="btn_bright">Request</button></a>
+<a href="conformation.php?type=add_to_request&book_id=<?php echo $row['book_id']; ?>"><button type="button" name="button" class="btn_bright" style="background:#6BB1E8;">Request</button></a>
 <p>Administrator:<?php echo $row['admin_username']; ?> </p>
       </div>
     </div>
