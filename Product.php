@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://<?php echo $server_domain_name; ?>/book_request/assets/css/main_respocive.css">
     <link rel="stylesheet" href="http://<?php echo $server_domain_name; ?>/book_request/assets/css/client_responcive.css">
   </head>
-  <body>
+  <body style="background: white;">
 <?php   require $_SERVER['DOCUMENT_ROOT'].'/book_request/assets/widgets/client_top_nav_bar.php'; ?>
     <div class="banners" style="">
   <button type="button" name="button" class="Banner_Button"
@@ -49,26 +49,28 @@ Banner_imgs();
         <?php
         function Category(){
 require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php';
-$sql = "SELECT * FROM books WHERE cat_id='$_GET[cat_Id]'";
+$sql = "SELECT * FROM books WHERE cat_id='$_GET[cat_Id]' AND stock>0";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
    while($row = $result->fetch_assoc()) {
  ?>
  <a href="book.php?Book_Id=<?php echo $row['book_id']; ?>" style="color:black;">
- <div class="Category_Section_cont" style="background:url('/book_request/admin/include_Files/uploads/<?php echo $row['book_img']; ?>');
- background-size: cover;
- background-position: center;
-   background-repeat: repeat-x;
- ">
- <div class="cat_banner">
-   <?php echo $row['book_name']; ?>
- </div>
- </div>
+<div class="product_box">
+  <img src="http://<?php echo $GLOBALS['server_domain_name'];; ?>/book_request/admin/include_Files/uploads/<?php echo $row['book_img']; ?>" alt="" class="prod_img">
+  <p><?php echo $row['book_name']; ?></p>
+  <div class="float_covering">
+    <p class="left">Stock: <?php echo $row['stock']; ?></p>
+    <p class="right book_money">₹ <?php echo $row['price']; ?></p>
+  </div>
+</div>
  </a>
    <?php
  }
 } else {
- echo "0 results";
+ echo '<div class="Login_msg" style="margin-top:50px;">
+       <b> Products of these Category is not added and will be added soon
+       </b>
+     </div>';
 }
         }
         Category();
