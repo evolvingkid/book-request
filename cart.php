@@ -25,10 +25,11 @@
     <div class="box_center" style="margin-top:50px;">
       <div class="float_covering">
 <?php  require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/widgets/client_dashbord_side_menu.php'; ?>
-        <div class="main_body_student_dashbord left">
-            <div class="float_covering">
-              <p class="left">Your Cart</p>
+        <div class="main_body_student_dashbord left" style="padding: 0px; width: calc(55% - 100px);">
+            <div class="float_covering" style="background: #E0DEDE;">
+              <p class="left" style="margin-left: 10px;">Your Cart</p>
             </div>
+            <div class="divider"></div>
 <div class="">
   <?php
   function Category(){
@@ -38,11 +39,20 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 while($row = $result->fetch_assoc()) {
 ?>
-<div class="Category_Section_cont" style="background:url('/book_request/admin/include_Files/uploads/<?php echo $row['book_img']; ?>');
-  background-size: cover; background-position: center;">
-<div class="cat_banner">
-<?php echo $row['book_name']; ?>
-</div>
+<div class="cart_box">
+    <img src="http://<?php echo $GLOBALS['server_domain_name'];; ?>/book_request/admin/include_Files/uploads/<?php echo $row['book_img']; ?>" alt="" class="cart_img">
+    <div class="left" style="margin-left: 50px;">
+<p> <b> <?php echo $row['book_name']; ?> </b></p>
+<p class="book_money">₹ <?php echo $row['price']; ?></p>
+<p style="font-size: 10px;">Added to cart on: <?php echo $row['cart_date']; ?></p>
+<div class="">
+   <button type="button" name="button" class="btn_bright" style="background:#1D1B1B; color: white; font-size: 10px; padding: 10px 30px; border-radius: 50px;"> In Stock</button>
+ </div>
+    </div>
+    <div class="left" style="margin-left: 50px;">
+      <button type="button" name="button" class="btn_bright" style="background:#1D1B1B; color: white; font-size:16px; width: 150px;">Request  <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/book_request/assets/Build_In_SVG/request_icon.svg" alt="" class="req_btn_img"> </button> <br>
+<button type="button" name="button" class="btn_light" style="font-size:16px; width: 150px;">Remove</button>
+    </div>
 </div>
 <?php
 }

@@ -230,3 +230,18 @@
 .req_btn_img{
   height: 20px;
 }
+.cart_box{
+  border: solid 1px #D5D5D5;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  width: calc(100% - 50px);
+  color: #707070;
+}
+.divider{
+  height: 50px;
+}
+.cart_img{
+  height: 100px;
+  float: left;
+}
