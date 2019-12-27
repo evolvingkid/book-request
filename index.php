@@ -26,12 +26,6 @@ session_start();
     <a href="login.php" style="color:white;">  <i>Login in</i> </a>
     <?php  } ?>
   </div>
-  <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-  <a href="index.php" style="color:white;">  <i> Home </i> </a>
-  </div>
-  <div class="Nav_head_right" style="padding-right:20px; padding-top:5px;">
-    <a href="AboutUs.php" style="color:white;">  <i>About Us</i> </a>
-  </div>
 </nav>
 <div class="contain_body">
 <div class="Head_intro_Box"><i> Find You Faviorite<br> Books in Here</i></div>

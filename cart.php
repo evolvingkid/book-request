@@ -46,12 +46,17 @@ while($row = $result->fetch_assoc()) {
 <p class="book_money">₹ <?php echo $row['price']; ?></p>
 <p style="font-size: 10px;">Added to cart on: <?php echo $row['cart_date']; ?></p>
 <div class="">
-   <button type="button" name="button" class="btn_bright" style="background:#1D1B1B; color: white; font-size: 10px; padding: 10px 30px; border-radius: 50px;"> In Stock</button>
+   <button type="button" name="button" class="btn_bright" style="background:#1D1B1B; color: white; font-size: 10px; padding: 10px 30px; border-radius: 50px;"> <?php if ( $row['stock'] == 0 ) {
+     echo "OUT OF STOCK";
+   }else {
+     echo "IN STOCK";
+   } ?></button>
  </div>
     </div>
     <div class="left" style="margin-left: 50px;">
-      <button type="button" name="button" class="btn_bright" style="background:#1D1B1B; color: white; font-size:16px; width: 150px;">Request  <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/book_request/assets/Build_In_SVG/request_icon.svg" alt="" class="req_btn_img"> </button> <br>
-<button type="button" name="button" class="btn_light" style="font-size:16px; width: 150px;">Remove</button>
+<a href="book.php?Book_Id=<?php echo $row['book_id']; ?>"> <button type="button" name="button" class="btn_bright" style="background:#1D1B1B; color: white; font-size:16px; width: 150px;">Request  <img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/book_request/assets/Build_In_SVG/request_icon.svg" alt="" class="req_btn_img"> </button>
+ </a>  <br>
+<a href="include_Files/removecart.php?cart_id=<?php echo $row['cart_id']; ?>"> <button type="button" name="button" class="btn_light" style="font-size:16px; width: 150px;">Remove</button> </a>
     </div>
 </div>
 <?php
@@ -63,6 +68,35 @@ while($row = $result->fetch_assoc()) {
   Category();
    ?>
 </div>
+        </div>
+        <div class="left cart_tot">
+          <div class="head_tot_cart">
+            <i> summary</i>
+          </div>
+          <div class="cart_tot_box">
+          <p>  Total Price</p>
+          <p class="book_money"> ₹             <?php
+                      function tot_price()
+                      {
+                        require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php';
+                        $sql = "SELECT * FROM client_cart LEFT JOIN books ON client_cart.book_id = books.book_id WHERE st_id = '$_SESSION[student_id]' ";
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                          $tot_price=0;
+                        while($row = $result->fetch_assoc()) {
+                          $tot_price=$tot_price+$row['price'];
+                        }
+                        echo $tot_price;
+                      }else {
+            echo $tot_price;
+                      }
+                      }
+                      tot_price();
+                       ?></p>
+          </div>
+<a href="include_Files/req_full.php">  <div class="Tot_req">
+            Request All
+          </div></a>
         </div>
       </div>
 

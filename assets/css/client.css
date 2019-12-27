@@ -245,3 +245,22 @@
   height: 100px;
   float: left;
 }
+.cart_tot{
+  width: calc(20% - 50px);
+  border: solid 1px #D5D5D5;
+  margin-left: 30px;
+}
+.head_tot_cart{
+padding: 10px;
+background: #E0DEDE;
+}
+.cart_tot_box{
+  padding: 10px;
+}
+.Tot_req{
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
