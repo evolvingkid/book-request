@@ -55,7 +55,9 @@ if ($result->num_rows > 0) {
    while($row = $result->fetch_assoc()) {
  ?>
  <a href="Product.php?cat_Id=<?php echo $row['cat_id']; ?>" style="color:black;">
- <div class="Category_Section_cont" style="background:url('/book_request/admin/include_Files/uploads/<?php echo $row['cat_img']; ?>')">
+ <div class="Category_Section_cont" style="background:url('/book_request/admin/include_Files/uploads/<?php echo $row['cat_img']; ?>');
+  background-size: cover;
+    background-position: center;">
  <div class="cat_banner">
    <?php echo $row['category_name']; ?>
  </div>

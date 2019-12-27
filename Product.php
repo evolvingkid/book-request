@@ -55,7 +55,11 @@ if ($result->num_rows > 0) {
    while($row = $result->fetch_assoc()) {
  ?>
  <a href="book.php?Book_Id=<?php echo $row['book_id']; ?>" style="color:black;">
- <div class="Category_Section_cont" style="background:url('/book_request/admin/include_Files/uploads/<?php echo $row['book_img']; ?>')">
+ <div class="Category_Section_cont" style="background:url('/book_request/admin/include_Files/uploads/<?php echo $row['book_img']; ?>');
+ background-size: cover;
+ background-position: center;
+   background-repeat: repeat-x;
+ ">
  <div class="cat_banner">
    <?php echo $row['book_name']; ?>
  </div>

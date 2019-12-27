@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://<?php echo $server_domain_name; ?>/book_request/assets/css/main_respocive.css">
     <link rel="stylesheet" href="http://<?php echo $server_domain_name; ?>/book_request/assets/css/client_responcive.css">
   </head>
-  <body>
+  <body style="background:white;">
 <?php   require $_SERVER['DOCUMENT_ROOT'].'/book_request/assets/widgets/client_top_nav_bar.php'; ?>
     <?php
       require $_SERVER['DOCUMENT_ROOT'] . '/book_request/assets/include_Files/sql.php';
