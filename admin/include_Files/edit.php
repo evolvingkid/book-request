@@ -51,4 +51,12 @@ $edit_sql_class = new Edit_query($sql);
 $edit_sql_class->Redirect($sucess_msg, $redirect_link_head);
 }
 
+if (isset($_GET['dept_req_id'])) {
+  $sql = "UPDATE dept_orders SET oder_approve	=0 WHERE dpt_order_id='$_GET[dept_req_id]'";
+  echo $sql;
+$sucess_msg="Approval is completed";
+$redirect_link_head="dept_request.php";
+$edit_sql_class = new Edit_query($sql);
+$edit_sql_class->Redirect($sucess_msg, $redirect_link_head);
+}
  ?>

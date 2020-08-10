@@ -37,6 +37,9 @@
   <a href="deleted_request.php">  <div class=" inner_options">
       Deleted Request
     </div></a>
+    <a href="dept_request.php">  <div class=" inner_options">
+        Dept Requests
+      </div> </a>
     </div>
   </div>
   <div class="side_nav_bar_option" style="margin-top:10px;" onclick="show_inner_option('Users')">

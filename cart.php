@@ -88,7 +88,7 @@ while($row = $result->fetch_assoc()) {
                         }
                         echo $tot_price;
                       }else {
-            echo $tot_price;
+          //  echo $tot_price;
                       }
                       }
                       tot_price();

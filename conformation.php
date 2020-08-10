@@ -3,7 +3,8 @@ session_start();
 if (isset($_GET['type'])) {
     if ($_GET['type'] == "add_to_request") {
 if (isset($_SESSION["student_id"])){
-  header("Location: include_Files/order_creation.php?type=".$_GET['type']."&book_id=".$_GET['book_id']);
+  header("Location: include_Files/payment_method.php?type=".$_GET['type']."&book_id=".$_GET['book_id']);
+//  header("Location: include_Files/order_creation.php?type=".$_GET['type']."&book_id=".$_GET['book_id']);
   }else {
     header("Location: account_process_choose.php?type=".$_GET['type']."&book_id=".$_GET['book_id']);
   }
